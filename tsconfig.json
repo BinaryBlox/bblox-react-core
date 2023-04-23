@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "lib": ["ES2016", "dom"],
+    "target": "ES2022",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["jest"],
+    "typeRoots": ["./src/types"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": [
+    "setupTests.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/components/feedback/feedback.stories.mdx",
+    "src/components/alerts/alerts.stories.mdx"
+  ],
+  "exclude": ["dist", "node_modules"]
+}

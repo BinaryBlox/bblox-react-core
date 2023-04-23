@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./src/types"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "exclude": [
+    "dist",
+    "types",
+    "storybook-static",
+    "node_modules",
+    "src/tests",
+    "src/**/*.test.ts",
+    "src/**/*.test-utils.ts",
+    "src/**/*.test-utils.tsx",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx",
+    "src/storybook.tsx"
+  ]
+}
